@@ -1,0 +1,41 @@
+.advertisement {
+	width: 100px;
+	height: 150px;
+	border-color: black;
+	border-width: 2px;
+	background-color: gray;
+	color: rgb(0, 0, 0);
+	position: absolute;
+	top: 5px;
+	left: 5px;
+}
+
+.header {
+	display: flex;
+	margin-left: 15%;
+}
+
+.content {
+	width: 70%;
+	margin: auto;
+	margin-top: 20px;
+}
+
+.main {
+	font-size: 20px;
+}
+
+.image {
+	width: 200px;
+	float: left;
+	margin-right: 10px;
+}
+
+.image img {
+	width: 100%;
+	height: auto;
+}
+
+.head {
+	justify-items: center;
+}
