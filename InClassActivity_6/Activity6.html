@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+
+<body>
+    <h2>Registration Form</h2>
+    <form action="Activity6-Preview.php" method="POST">
+        <table>
+            <tr>
+                <td>Name:</td>
+                <td><input type="text" name="name" placeholder="Please enter your name"></td>
+            </tr>
+            <tr>
+                <td colspan="2"> <br></td>
+            </tr>
+            <tr>
+                <td>Username:</td>
+                <td><input type="text" name="uname" placeholder="Please enter your username"></td>
+            </tr>
+            <tr>
+                <td colspan="2"> <br></td>
+            </tr>
+            <tr>
+                <td>Password:</td>
+                <td><input type="password" name="password" placeholder="Enter your password"></td>
+            </tr>
+            <tr>
+                <td colspan="2"> <br></td>
+            </tr>
+            <tr>
+                <td>Address:</td>
+                <td><input type="text" name="address" placeholder="Enter your address"></td>
+            </tr>
+            <tr>
+                <td colspan="2"> <br></td>
+            </tr>
+            <tr>
+                <td>Country:</td>
+                <td>
+                    <select name="Country">
+                        <option value="Country-USA">USA</option>
+                        <option value="Country-Turkiye">Turkiye</option>
+                        <option value="Country-China">China</option>
+                        <option value="Country-Germany">Germany</option>
+                    </select>
+                </td>
+            </tr>
+            <tr><td colspan="2"> <br></td></tr>
+            <tr>
+                <td>ZIP Code:</td>
+                <td><input type="text" name="zip" placeholder="Enter your ZIP code"></td>
+            </tr>
+            <tr><td colspan="2"> <br></td></tr>
+            <tr>
+                <td>Email:</td>
+                <td><input type="email" name="email" placeholder="Enter your email"></td>
+            </tr>
+            <tr><td colspan="2"> <br></td></tr>
+            <tr>
+                <td>Sex:</td>
+                <td>
+                    <input type="radio" name="Sex" value="Male"> Male
+                    <input type="radio" name="Sex" value="Female"> Female
+                </td>
+            </tr>
+            <tr><td colspan="2"> <br></td></tr>
+            <tr>
+                <td>Language:</td>
+                <td>
+                    <input type="checkbox" name="Language[]" value="English"> English
+                    <input type="checkbox" name="Language[]" value="French"> French
+                    <input type="checkbox" name="Language[]" value="Germany"> German
+                </td>
+            </tr>
+            <tr><td colspan="2"> <br></td></tr>
+            <tr>
+                <td>About:</td>
+                <td><textarea name="comment" rows="4" cols="50" placeholder="Tell us about yourself"
+                        ></textarea></td>
+            </tr>
+            <td></td>
+            <td><input type="submit" value="Submit"></td>
+
+        </table>
+    </form>
+</body>
+
+</html>
