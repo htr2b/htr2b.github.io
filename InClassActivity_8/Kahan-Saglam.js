@@ -16,11 +16,11 @@ window.onload = function () {
 function addScore() {
 	var name = $("name").value.trim();
 	var score = parseInt($("score").value);
-
-	if (name === "" || isNaN(score) || score < 0 || score > 100) {
-		alert("You must enter a valid name or score");
-		return;
-	}
+    	var nameRegex = /^[a-zA-Z\s]+$/;
+    	if (name === "" || !nameRegex.test(name) || isNaN(score) || score < 0 || score > 100) {
+        alert("You must enter a valid name (letters only) or a valid score");
+        return;
+    }
 
 	names.push(name);
 	scores.push(score);
